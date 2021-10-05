@@ -1,0 +1,10 @@
+﻿  COS.cpp
+C:\Users\mina_\Desktop\hzc\COS\3.1\COS.cpp(21,81): warning C4552: '>': result of expression not used
+C:\Users\mina_\Desktop\hzc\COS\3.1\COS.cpp(25,81): warning C4552: '>': result of expression not used
+C:\Users\mina_\Desktop\hzc\COS\3.1\COS.cpp(67,25): warning C4101: 'programinpurt': unreferenced local variable
+  Generating code
+  1 of 111 functions ( 0.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  COS.vcxproj -> C:\Users\mina_\Desktop\hzc\COS\3.1\x64\Release\COS.exe
