@@ -2,10 +2,14 @@
 #include <cstring>
 #include <cstdio>
 #include <ctime>
+#include <cstdlib>
+#include <conio.h>
+#include <ctype.h>
+#include <Windows.h>
 using namespace std;
 
-int getTime() {
-    return clock() / CLOCKS_PER_SEC;
+void version() {
+    cout << "version:v2.5" << endl;
 }
 
 int main()
@@ -17,84 +21,18 @@ int main()
                 cout << "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111";
                 cout << "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
             }
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
-            cout << endl;
+            for (int startscreenlock2 = 500;startscreenlock2--;startscreenlock2 > 0) {
+                cout << endl;
+            }
             cout << "COS" << endl;
             cout << "made by Clod" << endl;
-            cout << "Internal version:v1.2" << endl;
-            cout << "initial password:123456" << endl;
+            version();
             startscreenusedclock++;
         }
-        cout << "Please enter the password:";
-        string password;
-        cin >> password;
-        if (password == "123456" || password == "qwertyuiop") {
+        cout << "Please enter product key:";
+        string product_key;
+        cin >> product_key;
+        if (product_key == "128446-837473-74756893-4785836-4834648" || product_key == "104857-039285-385938-438236-385846") {
             for (;;) {
                 cout << "************************************************************************************************************************************************************************************";
                 string maininput;
@@ -103,7 +41,7 @@ int main()
                 if (maininput == "help") {
                     cout << "************************************************************************************************************************************************************************************";
                     cout << "help:show help(help)" << endl;
-                    cout << "power:shut down(power--restart)" << endl;
+                    cout << "power:shut down(power--shutdown)" << endl;
                     cout << "clock:clock(clock)" << endl;
                 }
                 else if (maininput == "power") {
@@ -112,20 +50,10 @@ int main()
                     cout << "power>";
                     cin >> powerinput;
                     if (powerinput == "restart") {
-                        startscreenusedclock--;
-                        break;
+                        system("shutdown -r -t 0");
                     }
-                }
-                else if (maininput == "clock") {
-                    cout << "************************************************************************************************************************************************************************************";
-                    int i = 0;
-                    int lastTime = 0;
-                    while (1) {
-                        int now = getTime();
-                        if (now - lastTime > 0) {
-                            cout << ++i << endl;
-                            lastTime = now;
-                        }
+                    else if (powerinput == "shutdown") {
+                        system("shutdown - s - t 0");
                     }
                 }
                 else if (maininput == "program") {
@@ -143,7 +71,7 @@ int main()
             }
         }
         else {
-            cout << "Password error!" << endl;
+            cout << "Product key error!" << endl;
             cout << "************************************************************************************************************************************************************************************";
             continue;
         }
