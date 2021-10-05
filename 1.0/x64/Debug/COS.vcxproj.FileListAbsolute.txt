@@ -1,0 +1,2 @@
+C:\Users\mina_\Desktop\hzc\COS\x64\Debug\COS.exe
+C:\Users\mina_\Desktop\hzc\COS\x64\Debug\COS.pdb

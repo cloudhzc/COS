@@ -1,0 +1,7 @@
+﻿  COS.cpp
+C:\Users\mina_\Desktop\hzc\COS\2.3\COS.cpp(16,81): warning C4552: '>': result of expression not used
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 111 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  COS.vcxproj -> C:\Users\mina_\Desktop\hzc\COS\2.3\x64\Release\COS.exe
