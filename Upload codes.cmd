@@ -1,4 +1,4 @@
-cd C:\Users\mina_\Desktop\hzc\COS
+cd \\
 git init
 git add .
 git commit -m "first commit"
